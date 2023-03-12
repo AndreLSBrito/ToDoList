@@ -1,0 +1,75 @@
+.task{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  line-height: 1.4;
+}
+
+.checkboxRoot{  
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--blue-300); 
+}
+
+.checkboxRoot:hover{
+  border: 2px solid var(--blue-500); 
+}
+
+.checkboxRoot[data-state="checked"]{
+  text-decoration-line: line-through;
+  border: 2px solid var(--purple-500); 
+}
+
+.checkboxRoot[data-state="checked"]:hover{
+  background: var(--purple-300); 
+}
+
+.checkboxRoot:focus{
+  box-shadow: 0 0 0 2px var(--gray-500);
+  outline: none;
+}
+
+.checkboxIndicator{ 
+  height: 1rem;
+  width: 1rem;
+  background: var(--gray-500);
+  border-radius: 50%;
+}
+
+.checkboxIndicator:hover{
+  background: var(--blue-500);
+  opacity: 0.8;
+}
+
+.iconCheck{  
+   background: var(--purple-500);
+   color: var(--gray-100);   
+   border-radius: 999px;
+   border: 2px solid var(--purple-500);
+   outline: none;
+}
+
+.iconCheck:hover{
+  background: var(--purple-300);
+}
+
+.iconTrash{
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: start;
+  opacity: 0.9;
+  color: var(--gray-300);
+}
+
+.iconTrash:hover{
+  background: var(--gray-400);
+  border-radius: 4px;
+  color: var(--red-300);
+}
